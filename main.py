@@ -60,7 +60,7 @@ if option == "y":
         print("Program terminated")
         exit()
     if finalMessage == "n":
-        print("Encrypted Message - " + newMessage)
+        print("Encrypted message - " + newMessage)
         print("Program terminated")
         exit()
 else:
