@@ -60,6 +60,7 @@ if option == "y":
         print("Program terminated")
         exit()
     if finalMessage == "n":
+        print("Encrypted Message - " + newMessage)
         print("Program terminated")
         exit()
 else:
@@ -73,6 +74,12 @@ if optionVerif == "n":
         option = input("Do you want to decrypt a message (y/n) - ")
         optionVerif = input("Are you sure (y/n) - ")
 if option == "y":
+    optionVerifYkey = input("To decrypt a value, you WILL need the displacement value/key. Are you sure you want to continue (y/n) - ")
+    if optionVerifYkey == "y":
+        pass
+    if optionVerifYkey == "n":
+        print("Program terminated")
+        exit()
     key = int(input("Please enter the key value (number, negative or positive) - "))
     keyVerif = input("Are you sure (y/n) - ")
     if keyVerif == "y":
